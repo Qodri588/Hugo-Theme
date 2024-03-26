@@ -1,0 +1,27 @@
+@import "color";
+a{
+  color: black;
+  text-decoration-line: underline;
+  transition: color 0.15s ease-out;
+  text-decoration-thickness: 2px;
+  text-decoration-color: $theme-color;
+  text-underline-offset: 2px;
+  &:hover,
+  &.footnote-ref {
+    color: $theme-color;
+  }
+}
+
+#tags {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+  grid-auto-rows: 5px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: nowrap;
+  grif-gap: 5px;
+}

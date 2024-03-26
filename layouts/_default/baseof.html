@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ .Title }}</title>
+	{{ partial "meta_tags" . }}	
+	{{ partial "style" . }}
+  {{ partial "json_ld_article" . }}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.3.0/quicklink.umd.js"></script>
+  <script>
+  window.addEventListener('load', () => {
+  quicklink.listen();
+});
+</script>
+</head>
+
+<body class="right-sidebar-grid">
+  
+	{{ partial "header" . }}
+	{{ block "main" . }}{{ end }}
+	{{ partial "footer" . }}
+	
+</body>
+</html>

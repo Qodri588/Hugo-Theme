@@ -1,0 +1,38 @@
+$theme-color : #B67352;
+$font-color :#030637;
+$bg-color : #FCF8F2;
+@mixin bg-img{
+  background-image: radial-gradient(circle at center center, rgba(33,33,33,0),rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 1px,transparent 1px, transparent 4px),repeating-linear-gradient(45deg, rgb(56,56,56) 0px, rgb(56,56,56) 5px,transparent 5px, transparent 6px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+}
+
+
+
+
+.underline{
+  border-bottom: 1px #030637;
+}
+
+.pag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  
+  
+}
+
+.pag a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  margin: 0 0px;
+}
+
+.pag a:hover {
+  color: #000;
+}
+
+.pag .current-page {
+  font-weight: normal;
+  
+}

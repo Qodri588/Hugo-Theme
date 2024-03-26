@@ -1,0 +1,14 @@
+<article>
+	<h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+	<time style="font-weight: 400; font-size:0.8em"datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
+	{{ range .Params.tags }}
+	<a style="font-weight: 400; font-size:0.8em" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+	{{ end }}
+	<div>
+	  {{ if gt (len .Summary) 200 }}
+	  
+		 {{ slicestr .Summary 0 200 }} {{ if .Truncated }}<a href="{{ .Permalink }}">...Read more...</a>
+		{{ end }}
+		{{ end }}
+	</div>
+</article>
