@@ -26,7 +26,7 @@
         .img-column .title{
           width: auto;
           height: auto;
-          padding: 3px;
+          padding: 5px;
           
         }
         /* Styling untuk teks */
@@ -44,7 +44,6 @@ padding-top:1em;
 .img-column {
   display: inline-block;
   vertical-align: top;
-  
 }
 
 .image-side {
@@ -52,14 +51,17 @@ padding-top:1em;
 }
 
 .title {
-  margin-bottom: auto;
-  line-height: 120%;
-  color: $bg-color;
+  margin-bottom: 20px;
 }
 
 .relat {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
+
+.widget-taglist__link {
+  margin-right: 5px;
+}
+
 
 .tg {
   color:#FCF8F2;
