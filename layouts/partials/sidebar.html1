@@ -1,0 +1,67 @@
+<section class="right-sidebar">
+  <div class="latest-Post">
+   <h3>LATEST POST</h3>
+   <div class="container">
+      {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+        <div class="img-column">
+          <div style="line-height:5em" class="image-side">
+            <figure class="width : 5em; height:5em">
+            <img style="width:5em; object-fit:none; height:3em" src="{{ .Params.image }}" alt="">
+            </div>
+            </figure>
+        </div>
+        <div class="title">
+          <div style="padding-left:5px">
+            <strong><a style="line-height:3px; color:#FCF8F2"href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+          </div>
+          <div style="padding-left:5px">
+            <span class="smal">Rabu, 20 April 2023</span>
+          </div>
+         
+    </div>
+        {{ end }}
+  </div>
+  
+  
+  
+  
+  
+  <div class="pd-b pd-t">
+    {{ $related := .Site.RegularPages.Related . | first 3 }}
+      {{ with $related }}
+      <h3>RELATED POST</h3>
+
+     {{ range . }}
+     <div class="relat">
+     <strong><a style="color:#FCF8F2" href="{{ .RelPermalink }}">{{ .Title }}</a></strong>
+ </div>
+ {{ end }}
+{{ end }}
+  </div>
+
+<div class="categori pd-b">
+  <h3>CATEGORIES</h3>
+  {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+   <strong><a style="color:#FCF8F2"href="{{.Permalink}}">{{.Title}}</s></strong></li>
+{{end}}
+</div>
+
+
+
+
+
+
+  <div class="pd-b">
+    <h3>TAGS</h3>
+    {{- range site.Taxonomies.tags.ByCount }}
+      {{- if le .Count 25 }}
+        <a class="tg cloud" href="{{ .Page.RelPermalink | absURL }}">
+          #{{- .Page.LinkTitle }}
+          {{- if site.Params.widgets.tags_counter }} ({{ .Count }}){{ end -}}
+        </a>
+      {{- end }}
+    {{- end }}
+  </div>
+</div>
+</section>
+
