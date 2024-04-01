@@ -47,7 +47,7 @@
 }
 /* general column padding */
 .right-sidebar-grid > .main-content, .right-sidebar {
-  padding: 0.7rem;
+  padding: 1.2rem;
 }
 
 /* assign columns to grid areas */
@@ -93,14 +93,5 @@
   }
 }
 
-
-
-article {
-  background-color: $bg-color;
-  box-shadow: 0 8px 32 mupx 0 rgba(0,0,0,0.4);
-  border-radius: 0;
-  padding: 15px;
-  margin-bottom: 1rem;
-}
 
 

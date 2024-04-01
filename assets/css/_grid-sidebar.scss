@@ -8,8 +8,11 @@ aside ul{
   list-style: none;
   li{
     padding-bottom: 5px;
-    padding-top: 5px;;
+    padding-top: 5px;
+    padding-left: 5px + 15px;
+    padding-right: 5px + 15px;
     border-bottom: 0.1px solid silver;
+    
     
     a{
       text-decoration: none;
