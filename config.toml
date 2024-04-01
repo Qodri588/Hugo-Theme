@@ -1,4 +1,4 @@
-baseURL = "https://hugo-theme-simple.netlify.app"
+baseURL = ""
 languageCode = "id-ID"
 title = "Blog Tutor"
 

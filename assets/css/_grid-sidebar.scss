@@ -1,0 +1,18 @@
+aside{
+  padding: 1rem;
+  
+}
+aside ul{
+  margin: 0;
+  padding:0;
+  list-style: none;
+  li{
+    padding-bottom: 5px;
+    padding-top: 5px;;
+    border-bottom: 0.1px solid silver;
+    
+    a{
+      text-decoration: none;
+    }
+  }
+}

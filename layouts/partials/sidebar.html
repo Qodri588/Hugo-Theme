@@ -1,15 +1,12 @@
-<div class="sidebar">
-
+<aside class="sidebar">
+  <h3>Latest Post</h3>
   <ul>
-            {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    <li class="article-item">
-      <img src="{{ .Params.image }}" alt="Article Image" class="article-image">
-      
-      <strong>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-        </strong>
-        
-    </li>
+    {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+    <li class="side-li" style="margin-left:0"><strong>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    </strong></strong>
     {{ end }}
   </ul>
-</d>
+</aside>
+
+

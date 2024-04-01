@@ -1,31 +1,10 @@
 {{ define "main" }}
 	<main class="main-content">
-	  <div class="set">
 		<article>
 			<h1>{{ .Title }}</h1>
-			<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
 				{{ .Content }}
-			</div>
-	<div class="tags-list">
-	  <p></p>
-    {{- with .Params.tags -}}
-        {{- if ge (len .) 1 -}}
-            {{- range . -}}
-                <strong><a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}/">#{{ . }}</a></strong>
-            {{ end -}}
-        {{- end -}}
-    {{- end -}}
-</div>
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-			{{ end }}
+			{{ partial "info-page" . }}
 		</article>
-		</div>
-
-		
 	</main>
 {{ partial "sidebar.html" . }}
 {{ end }}

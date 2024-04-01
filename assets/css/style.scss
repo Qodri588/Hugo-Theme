@@ -4,10 +4,10 @@
 @import "typography";
 @import "links";
 @import "header";
-//@import "grid-sidebar";
+@import "grid-sidebar";
 @import "color";
-@import "sidebar";
-
+@import "info-page";
+@import "footer";
 
 
 
@@ -47,7 +47,7 @@
 }
 /* general column padding */
 .right-sidebar-grid > .main-content, .right-sidebar {
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 /* assign columns to grid areas */
@@ -85,12 +85,22 @@
             'footer footer footer';
     }
 }
-.hr{
-   border-top: 4px solid #BEADFA;
-}
+
 @media (min-width:768px) {
   .hr{
     background-color:none; 
     border-top: none;
   }
 }
+
+
+
+article {
+  background-color: $bg-color;
+  box-shadow: 0 8px 32 mupx 0 rgba(0,0,0,0.4);
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 1rem;
+}
+
+

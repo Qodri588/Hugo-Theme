@@ -4,8 +4,9 @@
   //background-color: $font-color;
   color: #fff;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 20px;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,0.4);
 }
 
 .nav-list {
@@ -16,12 +17,14 @@
 }
 
 .nav-list li {
+  
   margin-right: 20px;
 }
 
 .nav-list a {
   text-decoration: none;
   color: #fff;
+  text-align: center;
 }
 
 .nav-list a:hover {

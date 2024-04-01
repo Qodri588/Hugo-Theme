@@ -1,2 +1,0 @@
-# Hugo-Theme
-theme simple
