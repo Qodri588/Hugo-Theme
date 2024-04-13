@@ -1,27 +1,24 @@
-baseURL = "https://hugo-theme-simple.netlify.app"
+baseURL = "/"
 languageCode = "id-ID"
 title = "Blog Tutor"
-
-
 enableEmoji = true
 enableRobotsTXT = true
 canonifyURLs = true
-
+theme = ""
+googleAnalytics = ""
 
 [Params]
-  description = "Blog simple yang memberikan tulisan berbobot dengan singkat"
-  logo = "favicon-32x32.png"
-  copyright = "Blog Tutor"
-  googleverif = "kode verifikasi google"
-  author = "Praveen Juge"
-  github = "https://github.com/praveenjuge"
-  facebook = "https://facebook.com/praveenjuge"
-  og_image = "/images/og.png"
-  ogimage = "/images/og.png"
-  sitename = "Site Name"
-  twitter = "@praveenjuge"
-  [Author]
-    name = "Qodri"
+description = "Blog simple yang memberikan tulisan berbobot dengan singkat"
+logo = "favicon-32x32.png"
+copyright = "Blog Tutor"
+googleverif = "kode verifikasi google"
+author = "Praveen Juge"
+github = "https://github.com/praveenjuge"
+facebook = "https://facebook.com/praveenjuge"
+og_image = "/images/og.png"
+ogimage = "/images/og.png"
+sitename = "Site Name"
+twitter = "@praveenjuge"
 
-
-
+[Author]
+name = "Qodri"
